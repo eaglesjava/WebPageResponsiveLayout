@@ -1,0 +1,172 @@
+
+/*清除样式*/
+body,h2{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+}
+
+/*边距*/
+section#main,header,aside,footer{
+	background: #333;
+	margin: 5px 0;
+}
+
+/*控制字体*/
+h2{
+	text-align: center;
+	font-size: 3em;
+}
+
+/*容器自动居中*/
+section#container{
+	margin: 0 auto;
+	width: 960px;
+}
+
+header{
+	float: left;
+	width: 100%;
+	line-height: 100px;
+}
+
+#left{
+	float: left;
+	width: 200px;
+	line-height: 400px;
+}
+
+/*加section是因为最开始设置了边距*/
+section#main{
+	float: left;
+	width: 540px;
+	line-height: 400px;
+	margin-left: 10px;
+}
+
+#right{
+	float: right;
+	width: 200px;
+	line-height: 400px;
+}
+
+footer{
+	float: left;
+	width: 100%;
+	line-height: 80px;
+}
+
+/*1000px  以上屏幕如果显示*/
+@media screen and (min-width:1000px) {
+	h2{
+		color: yellow;
+		font-size: 4em;
+	}
+	
+	/*容器自动居中*/
+	section#container{
+		width: 1160px;
+	}
+
+	/*加section是因为最开始设置了边距*/
+	section#main{
+		width: 600px;
+	}
+	
+	#right{
+		width: 335px;
+		line-height: 400px;
+	}
+	
+}
+
+/* pad 640-1000 */
+@media screen and (min-width:640px ) and (max-width:1000px){
+	h2{
+		color: #FOF;
+		font-size: 2.5;
+	}
+	
+	section#container{
+		width: 600px;
+	}
+	
+	#left{
+		width:160px;
+	}
+	
+	section#main{
+		width: 430px;
+	}
+	 
+	/*阴藏右侧功能*/
+	#right{
+		display: none;
+	}
+	
+}
+
+/* phone 640px lt max-width:639px*/
+
+@media screen and (max-width:639px ) {
+	h2{
+		color: green;
+		font-size: 1.5em;
+	}
+	
+	section#container{
+		width: 400px;
+	}
+	
+	#left{
+		float: left;
+		width: 100%;
+		line-height: 100px;
+		/*display: none;*/
+	}
+	
+	section#main{
+		float: left;
+		width: 100%;
+		line-height: 200px;
+		margin-left: 0;
+	}
+	
+	#right{
+		float:left;
+		width: 100%;
+		line-height: 100px;
+		/*display: none;*//*加载过来阴藏掉，不然太多.....*/
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
